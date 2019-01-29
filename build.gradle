@@ -1,0 +1,16 @@
+apply plugin: 'application'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+mainClassName = 'org.fenxui.samples.simple.SampleApp'
+
+dependencies {
+    compile group: 'org.fenxui', name: 'ootb-jfx-jdk8', version: '1.0+'
+
+	compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
+	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+}
